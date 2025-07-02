@@ -1,0 +1,10 @@
+# Ambiente Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Configurações sensíveis
+.env
+
+# VS Code
+.vscode/
