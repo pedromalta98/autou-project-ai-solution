@@ -1,0 +1,10 @@
+runtime: python310
+entrypoint: gunicorn -b :$PORT backend.app:app
+
+env_variables:
+  HF_API_TOKEN:  "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"
+
+automatic_scaling:
+  min_pending_latency: 2s
+  max_pending_latency: 15s
+  max_instances: 5
